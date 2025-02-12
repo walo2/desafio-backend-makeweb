@@ -17,4 +17,7 @@
             </a>
         @endforeach
     </div>
+    <div class="pl-10 pr-10 pb-10">
+        {{ $films->links() }}
+    </div>
 </div>
