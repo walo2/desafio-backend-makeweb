@@ -14,4 +14,9 @@ class Film extends Model
         'summary',
         'cover',
     ];
+
+    public static function index()
+    {
+        return $films = Film::query()->orderBy('created_at', 'asc')->paginate(12);
+    }
 }
